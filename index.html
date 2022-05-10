@@ -9,25 +9,32 @@
 </head>
 <body>
   <div class="wrapper">
-    <header>
-      <a href="">Pinnacle Services and Solutions</a>
-      <nav>
-        <ul>
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Services</li>
-          <li>Contact</li>
-        </ul>
+    <header class="header" id="header">
+      <div>
+        <a href="#" class="header__brand">Pinnacle Services and Solutions</a>
+      </div>
+      <nav class="header__nav">
+        <div class="header__nav-item active">Home</div>
+        <div class="header__nav-item">About Us</div>
+        <div class="header__nav-item">Services</div>
+        <div class="header__nav-item">Contact</div>
       </nav>
     </header>
     <main>
       <section class="section-home">
-        <h1>Delivering on the Promise of Innovation</h1>
-        <p>Bridge the gap between strategic vision and execution</p>
+        <div class="home">
+          <div class="home__box">
+            <h1 class="heading-primary">Delivering on the Promise of Innovation</h1>
+            <p class="home__description">Bridge the gap between strategic vision and execution</p>
+          </div>
+          <div class="home__img">
+            <img src="./assets/img/money-jar-medium.jpg" alt="money-jar-image" class="home__img">
+          </div>
+        </div>
       </section>
       <section class="section-about">
-        <h2>About us</h2>
-        <span>Our values</span>
+        <h2 class="heading-secondary">About us</h2>
+        <p>Our values</p>
         <p>
           “Success in professional services does not come solely from application of tools and methods, but from superior client-focus and relationships built on respect.”
         </p>
@@ -44,9 +51,9 @@
       </section>
       <section class="section-services">
         <div>
-          <h2>Services</h2>
+          <h2 class="heading-secondary">Services</h2>
           <div>
-            <div>
+            <div class="card">
               <h3>Strategic Consulting</h3>
               <p>
                 Strategic Consulting
@@ -62,7 +69,7 @@
                 <li>Consumer & Competition Insights</li>
               </ul>
             </div>
-            <div>
+            <div class="card">
               <h3>Managed IT Services</h3>
               <p>
                 Core Managed IT Services offering includes:
@@ -73,7 +80,7 @@
                 <li>Advanced Analytics</li>
               </ul>
             </div>
-            <div>
+            <div class="card">
               <h3>Operational Execution</h3>
               <p>
                 Operational Excellence engagement offering drives to deliver:
@@ -90,7 +97,7 @@
         </div>
       </section>
       <section class="section-contact">
-        <h2>Contact Us</h2>
+        <h2 class="heading-secondary">Contact Us</h2>
         <div>
           <form action="">
             <input type="text" name="name" id="name" placeholder="Name">
@@ -108,7 +115,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer" id="footer">
       <div>
         <p>Pinnacle Services and Solutions</p>
         <p>Copyright &copy; 2021 All rights reserved</p>
