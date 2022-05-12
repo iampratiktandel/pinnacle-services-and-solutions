@@ -138,6 +138,10 @@ body {
   width: 100%;
 }
 
+.error-msg {
+  color: red;
+}
+
 .card {
   background-color: #eef3f5;
 }

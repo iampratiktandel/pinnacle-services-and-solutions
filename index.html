@@ -99,11 +99,20 @@
       <section class="section-contact">
         <h2 class="heading-secondary">Contact Us</h2>
         <div>
-          <form action="">
-            <input type="text" name="name" id="name" placeholder="Name">
-            <input type="tel" name="phone" id="phone" placeholder="Phone">
-            <input type="email" name="email" id="email" placeholder="Email ID">
-            <button type="submit">Contact Us</button>
+          <form>
+            <div>
+              <input type="text" name="name" id="name" placeholder="Name">
+              <p id="nameErrorMsg" class="error-msg"></p>
+            </div>
+            <div>
+              <input type="tel" name="phone" id="phone" placeholder="Phone">
+              <p id="phoneErrorMsg" class="error-msg"></p>
+            </div>
+            <div>
+              <input type="email" name="email" id="email" placeholder="Email ID">
+              <p id="emailErrorMsg" class="error-msg"></p>
+            </div>
+            <button type="button" onclick="onSubmit()">Contact Us</button>
           </form>
         </div>
         <div>
@@ -130,5 +139,6 @@
       </div>
     </footer>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
